@@ -41,7 +41,7 @@
     background-color: rgb(0, 0, 106);
     border: 2px solid #00006A;
     font-size: 20px;
- margin-top:-1PX ;
+ margin-top:-2PX ;
  margin-left:-2px;
 }
 #vlak1{
@@ -65,12 +65,21 @@
     height: 240px;
     font-size:20px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid #00006A;
+    border: 2px solid #ffffff;
 }
 
 #Sprinter{
     -webkit-text-fill-color: #00006A;
     font-size: 30px;
-    text-align: center;
+    margin-top: 10px;
+    margin-left: 300px;
     font-weight: bolder;
+    font-size: 20px;
+}
+#next{
+    width:480px;
+    height: 25px;
+    font-size:20px;
+    background-color: rgb(4, 28, 149);
+    border: 2px solid #1115a4;
 }
