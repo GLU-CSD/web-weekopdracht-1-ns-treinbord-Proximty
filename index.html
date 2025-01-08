@@ -14,8 +14,7 @@
         <div id="middle">
             <div id="treininfo">
                 <div id="Sprinter">Sprinter<img src="assets/img/ns_logo.png"></div>
-                <div id="timeleft">1 minuut  
-                </div>
+                <div id="timeleft">1 minuut</div>
                <div id="plaatsen"></div>
                 <div id="einde">Zwolle 
                     <div id=reis>via Utrecht Overvecht,Bilthoven,Den dolder,Amersfoort Cenrtaal
@@ -25,23 +24,6 @@
             <div id="next">
                 Hierna/next: 9:21 SPR Zwolle
             </div>
-            <script>
-                const interval=setInterval(function(){ 
-                    if (document.getElementById("timeleft").innerHTML=='1 minuut')
-                    {
-                        const now= new Date ();
-                        const hour =String(now.getHours()).padStart(2,'0');
-                        const minutes = String(now.getHours()).padStart(2,'0');
-                        document.getElementById('timeleft').innerHTML= hours +':'+minutes;
-            
-                    }
-                    else
-                    {
-                        document.getElementById("timeleft").innerHTML=="1 minuut";
-            
-                    }
-                })
-            </script>
 
             <!-- Hier komt de reizigers info -->
         </div>
@@ -59,5 +41,22 @@
         </div>
     </div>
  >
+ <script>
+    const interval=setInterval(function(){ 
+        if (document.getElementById("timeleft").innerHTML=='1 minuut')
+        {
+            const now = new Date ();
+            const hours =String(now.getHours()).padStart(2,'0');
+            const minutes = String(now.getHours()).padStart(2,'0');
+            document.getElementById('timeleft').innerHTML= hours +':'+minutes;
+
+        }
+        else
+        {
+            document.getElementById("timeleft").innerHTML=="1 minuut";
+
+        }
+    },5000)
+</script>
 </body>
 </html>
