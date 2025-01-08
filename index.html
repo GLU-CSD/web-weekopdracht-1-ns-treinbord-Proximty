@@ -25,6 +25,23 @@
             <div id="next">
                 Hierna/next: 9:21 SPR Zwolle
             </div>
+            <script>
+                const interval=setInterval(function(){ 
+                    if (document.getElementById("timeleft").innerHTML=='1 minuut')
+                    {
+                        const now= new Date ();
+                        const hour =String(now.getHours()).padStart(2,'0');
+                        const minutes = String(now.getHours()).padStart(2,'0');
+                        document.getElementById('timeleft').innerHTML= hours +':'+minutes;
+            
+                    }
+                    else
+                    {
+                        document.getElementById("timeleft").innerHTML=="1 minuut";
+            
+                    }
+                })
+            </script>
 
             <!-- Hier komt de reizigers info -->
         </div>
@@ -41,17 +58,6 @@
             </div> 
         </div>
     </div>
+ >
 </body>
 </html>
-<script>
-    const interval=setInterval(function(){ 
-        if (document.getElementById("timeleft").innerHTML=='1 minuut')
-        {
-
-        }
-        else
-        {
-
-        }
-    })
-</script>
