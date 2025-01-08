@@ -8,7 +8,7 @@
 
 #left{
     width: 240px;
-    background-color: #f2f2f2;
+    background-color: rgb(255, 255, 255);
     height: 335px;
     border: 2px solid #000;
 }
@@ -85,6 +85,8 @@
     font-size:20px;
     background-color: rgb(4, 28, 149);
     border: 2px solid #041C95;
+    -webkit-text-fill-color:#ffffff ;
+    font-weight: bolder;
 }
 #timeleft{
     width:245px;
@@ -103,8 +105,16 @@
     -webkit-text-fill-color: #00006A;
     font-size: 30px;
     margin-top: 10px;
-    margin-left: 20px;   
+    margin-left: 20px;
+    font-weight: bolder;   
 } 
 #reis{
     font-size: 20px;
+    font-weight: lighter;
+}
+#left img {
+    width:200px;
+    padding-left:15px;
+    padding-top: 40px;
+     
 }
