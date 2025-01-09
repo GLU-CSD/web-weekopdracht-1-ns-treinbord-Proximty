@@ -10,6 +10,7 @@
     <div id="container">
         <div id="left">
             <img src="assets/img/klok.png">
+            <div id="clock"></div>
         </div>
         <div id="middle">
             <div id="treininfo">
@@ -53,10 +54,20 @@
         }
         else
         {
-            document.getElementById("timeleft").innerHTML=="1 minuut";
+            document.getElementById("timeleft").innerHTML="1 minuut";
 
         }
-    },5000)
+    },5000);
+let clock = () => {
+  let date = new Date();
+  let hrs = date.getHours();
+  let mins = date.getMinutes();
+  let secs = date.getSeconds();
+  let time = `${hrs}:${mins}:${secs}`
+  document.getElementById("clock").innerText = time
+  setTimeout(clock, 1000);
+}
+// call the clock function
+clock();
 </script>
 </body>
-</html>
